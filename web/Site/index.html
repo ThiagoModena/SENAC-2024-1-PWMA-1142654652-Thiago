@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Champions League</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        
+        
+        <header>
+            <div class = "imgHeader">
+                <a href="index.html">
+                    <img src="./Assets/logo_dark.svg" alt="alt"/>
+                </a>
+            </div>
+            
+            <div class="searchArea">            
+                <input type="text" name="name" class="bar">
+                <input type="button" value="buscar">
+            </div>
+            
+            <nav class="links">
+                <ul class="menu">
+                    <li class="dropdownItem">
+                        <a href="">Jogador▾</a>
+                        
+                        <div class="menuDropdown">
+                            <a href="jogador/CadastroJogador.html" target="centro">Cadastrar</a>
+                            <a href="jogador/RemoverJogador.html" target="centro">Remover</a>
+                            <a href="jogador/listarJogadores.jsp" target="centro">Listar</a>
+                        </div>
+                        
+                    </li>
+                    <li class="dropdownItem">
+                        <a href="">Clube▾</a>
+                        
+                        <div class="menuDropdown">
+                            <a href="./clube/CadastroClube.html" target="centro">Cadastrar</a>
+                            <a href="./clube/RemoverClube.html" target="centro">Remover</a>
+                            <a href="clube/listarClubes.jsp" target="centro">Listar</a>
+                        </div>                        
+                    </li>
+                    <li><a href="url">Ingressos</a></li>
+                    <li><a href="">Sobre</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        
+        <main>
+            
+            <div class="container"> 
+            
+                <iframe class="centerFrame" name="centro" src="home.html">
+                
+                </iframe>
+            
+            </div>
+            
+        </main>
+        
+        <!--<div>TODO write content</div>-->
+    </body>
+</html>

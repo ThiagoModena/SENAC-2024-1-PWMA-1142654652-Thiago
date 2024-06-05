@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <style> 
+            * {
+                color: black;
+            }
+
+            html, body {
+                
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url(../Assets/ucl-jogador.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                
+            }
+            .cadForm {
+                width: 34%;
+                height: 85%; 
+
+                background: linear-gradient(#0b0752e1, #000000);
+                border-radius: 7%;
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 2px solid #0b1dbf;
+            }
+
+            .cadForm input {
+                
+            }
+
+            .cadForm h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #cccccc;
+            }
+
+            #btnCadJogador {
+                cursor: pointer;
+                color: #cccccc;
+                width: 260px;
+            }
+            input {
+                margin-bottom: 12px;
+                padding: 7px;
+                background: #25284b;
+                padding: 8px;
+                border: none;
+                font-family: Arial;
+                font-size: 19px;
+
+                color: bisque;
+                border-radius: 6px;
+            }
+
+            #posicao {
+                padding: 7px;
+                margin-bottom: 10px;
+                background: #25284b;
+                padding: 8px;
+                border: none;
+                font-family: Arial;
+                font-size: 19px;                
+            }
+            .selectOptions option {
+                color: silver;
+            }
+            .opcao {
+                color: silver;
+            }
+
+            .patro {
+                height: 80px;
+            }
+
+
+            .patroMenu {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                list-style: none;
+            }
+
+            .second {
+                margin-left: 12px;
+                margin-right: 12px;
+            }
+
+            .third {
+                margin-right: 12px;
+            }
+            .plus {
+                margin-right: 12px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        
+        <form method="post" action="./cadPlayer.jsp" class="cadForm">
+
+            <h1>Cadastrar Atleta</h1>
+
+            <input type="text" name="nome_jogador" id="nome_jogador" placeholder="Nome">
+           
+            <input type="text" name="clube_jogador" id="clube_jogador" placeholder="Clube">
+            
+            <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Nacionalidade">
+            
+            <input type="number" name="camisa_n" id="camisa_n" placeholder="n° camisa">
+            
+            <select name="posicao" id="posicao" class="selectOptions">
+                <option value="0" class="opcao">GOL</option>
+                <option value="1">ZAG</option>
+                <option value="2">LD</option>
+                <option value="3">LE</option>
+                <option value="4">VOL</option>
+                <option value="5">MEI</option>
+                <option value="6">PD</option>
+                <option value="7">PE</option>
+                <option value="8">ATA</option>
+            </select>
+            
+            <input type="submit" value="Ok" name="btnCadJogador" id="btnCadJogador"/>
+
+            <div class="patro">
+                <ul class="patroMenu">
+                    <li><img src="../sponsers/Lays.avif"></li>
+                    <li class="second"><img src="../sponsers/PS5.avif"></li>
+                    <li class="plus"><img src="../sponsers/FedEx.webp"></li>
+                    <li class="third"><img src="../sponsers/Turkish.webp"></li>
+                </ul>
+            </div>
+
+        </form>
+        
+        
+    </body>
+</html>

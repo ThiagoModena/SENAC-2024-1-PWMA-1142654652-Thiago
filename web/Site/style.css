@@ -1,0 +1,136 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 1 de jun. de 2024, 20:01:46
+    Author     : Raphael Cardoso
+*/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    /*height: 12%;*/
+    width: 100%;
+    /*padding: 15px;*/
+    background-color: #231061;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgHeader img {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.searchArea {
+    width: 320px;
+    display: inline;
+}
+
+.searchArea input{
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.bar {
+    width: 250px;
+    border: none;
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 0;
+}
+
+.menu li a{
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+}
+
+
+.links a{
+    color: aliceblue;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: darkgray;
+    /*background-color: blueviolet;*/
+}
+
+.menuDropdown {
+    padding: 6px;
+    background-color: #231061;
+    position: absolute;
+    display: none;
+}
+
+.menuDropdown a:hover {
+    background-color: #2342a4;
+}
+
+.dropdownItem:hover .menuDropdown {
+    display: block;
+}
+
+main {
+    height: 88%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(Assets/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+
+
+.centerFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+    background: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

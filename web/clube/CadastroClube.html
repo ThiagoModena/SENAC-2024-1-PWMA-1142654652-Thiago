@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        html,
+        body {
+
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../Assets/cropped-UEFA-Champions-League-Stadium-Wallpaper-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+
+        .cadFormClub {
+            width: 34%;
+            height: 85%;
+
+            background: linear-gradient(#0b0752e1, #000000);
+            border-radius: 7%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #0b1dbf;
+        }
+
+        .cadFormClub h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #cccccc;
+            margin-top: 23px;
+        }
+
+        .cadFormClub input {
+            padding: 7px;
+            margin-top: 15px;
+            background: #25284b;
+            padding: 8px;
+            border: none;
+            font-family: Arial;
+            font-size: 19px;
+            margin-bottom: 12px;
+
+            color: bisque;
+            border-radius: 6px;
+        }
+
+
+        .cadFormClub span {
+            color: #acadb3e3;
+        }
+
+        #leagues {
+            padding: 7px;
+            margin-top: 15px;
+            background: #25284b;
+            color: #cccccc;
+            padding: 8px;
+            border: none;
+            font-family: Arial;
+            font-size: 19px;
+        }
+
+        #btnCadClub {
+            cursor: pointer;
+            width: 260px;
+            margin-bottom: 18px;
+        }
+
+        #leagues option {
+            color: #cccccc;
+        }
+
+        .patrocinio {
+            width: 100%;
+            height: 80px;
+        }
+
+
+        .patroMenuDown {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            list-style: none;
+        }
+
+        .seconds {
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+
+        .thirds {
+            margin-right: 12px;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <form action="cadClub.jsp" method="post" class="cadFormClub">
+
+        <h1>Cadastrar Clube</h1>
+
+        <input type="text" name="nome_clube" id="nome_clube" placeholder="Nome do Clube">
+
+        <input type="text" name="origem" id="origem" placeholder="Origem">
+
+        <input type="text" name="fundacao" id="fundacao" placeholder="Data de fundação">
+
+        <select name="leagues" id="leagues">
+            <option value="0">LaLiga</option>
+            <option value="1">Serie A</option>
+            <option value="2">Premier League</option>
+            <option value="3">Bundesliga</option>
+            <option value="4">Ligue 1</option>
+            <option value="5">Eredivisie</option>
+            <option value="6">Liga Portugal</option>
+        </select>
+
+        <input type="submit" value="Ok" name="btnCadClub" id="btnCadClub" />
+
+        <div class="patrocinio">
+            <ul class="patroMenuDown">
+                <li><img src="../sponsers/Lays.avif"></li>
+                <li class="seconds"><img src="../sponsers/PS5.avif"></li>
+                <li class="thirds"><img src="../sponsers/FedEx.webp"></li>
+                <li><img src="../sponsers/Turkish.webp"></li>
+            </ul>
+        </div>
+
+    </form>
+</body>
+
+</html>
